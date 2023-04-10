@@ -8,23 +8,45 @@
 // У змінній min лежить число від 0 до 59. Визначте у котру чверть години
 // Попадає це число (у першу, другу, третю або четверту).
 
-const min = prompt('Enter minute');
-console.log(min);
+// const min = prompt('Enter minute');
+// console.log(min);
 
-if (min > 0 && min < 15) {
-    alert('First quarter');
-} else if (min >= 15 && min < 30) {
-    alert('Second quarter');
-} else if (min >= 30 && min < 45) {
-    alert('Third quarter');
-} else if (min >= 45 && min <= 59) {
-    alert('Fourth quarter');
-} else {
-    alert('Enter correct minute');
-}
+// if (min > 0 && min < 15) {
+//     alert('First quarter');
+// } else if (min >= 15 && min < 30) {
+//     alert('Second quarter');
+// } else if (min >= 30 && min < 45) {
+//     alert('Third quarter');
+// } else if (min >= 45 && min <= 59) {
+//     alert('Fourth quarter');
+// } else {
+//     alert('Enter correct minute');
+// }
 
 
 //TODO: 3 ===================================
 // Змінна num може набувати 4 значення: 1, 2, 3 або 4. Якщо вона має
 // значення '1', то у змінну result запишемо 'зима', якщо має значення
 // '2' - 'весна' і так далі. Розв'яжіть завдання через switch-case.
+
+let num = prompt("Введіть цифру від 1 до 4");
+let result;
+
+switch (num) {
+    case "1":
+        result = "зима";
+        break;
+    case "2":
+        result = "весна";
+        break;
+    case "3":
+        result = "літо";
+        break;
+    case "4":
+        result = "осінь";
+        break;
+    default:
+        result = "Введіть коректну цифру";
+            
+}
+alert(result);
