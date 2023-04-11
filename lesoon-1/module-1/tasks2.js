@@ -69,12 +69,29 @@
 // показати через alert: "Вірно!"
 //інакше відобразити: "Не знаєте? ECMAScript!"
 
-let question = prompt('Яка офіційна назва JavaScript?');
-let normalezedToUpperCaseQuestoin = question.toUpperCase();
-let result;
+// let question = prompt('Яка офіційна назва JavaScript?');
+// let normalezedToUpperCaseQuestoin = question.toUpperCase();
+// let result;
 
-if (normalezedToUpperCaseQuestoin === "ECMASCRIPT") {
-    alert("Вірно!");
-} else {
-    alert("Не знаєте? ECMAScript!");
-}
+// if (normalezedToUpperCaseQuestoin === "ECMASCRIPT") {
+//     alert("Вірно!");
+// } else {
+//     alert("Не знаєте? ECMAScript!");
+// }
+
+//TODO: 6 ===================================
+// Напишіть програму, яка отримає від користувача
+//число (кількість хвилин) і виведе у консоль
+//рядок у форматі годин і хвилин
+//70 === 01:10
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
+
+let userInput = Number(prompt("Enter quantity a minutes"));
+let hours;
+let minutes;
+
+minutes = String(userInput % 60).padStart(2, 0);
+hours = String(Math.floor(userInput / 60)).padStart(2, 0);
+
+console.log(`${hours}:${minutes}`);
+
