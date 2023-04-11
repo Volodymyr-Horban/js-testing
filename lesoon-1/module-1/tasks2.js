@@ -60,3 +60,21 @@
 //     console.log(num)
 //     num +=1
 // }
+
+//TODO: 5 ===================================
+//Використовуючи конструкцію if...else,
+//напишіть код, який запитуватиме:
+//"Яка офіційна назва JavaScript?"
+//Якщо користувач вводить "ECMAScript",
+// показати через alert: "Вірно!"
+//інакше відобразити: "Не знаєте? ECMAScript!"
+
+let question = prompt('Яка офіційна назва JavaScript?');
+let normalezedToUpperCaseQuestoin = question.toUpperCase();
+let result;
+
+if (normalezedToUpperCaseQuestoin === "ECMASCRIPT") {
+    alert("Вірно!");
+} else {
+    alert("Не знаєте? ECMAScript!");
+}
