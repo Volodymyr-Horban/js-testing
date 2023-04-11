@@ -29,24 +29,34 @@
 // значення '1', то у змінну result запишемо 'зима', якщо має значення
 // '2' - 'весна' і так далі. Розв'яжіть завдання через switch-case.
 
-let num = prompt("Введіть цифру від 1 до 4");
-let result;
+// let num = prompt("Введіть цифру від 1 до 4");
+// let result;
 
-switch (num) {
-    case "1":
-        result = "зима";
-        break;
-    case "2":
-        result = "весна";
-        break;
-    case "3":
-        result = "літо";
-        break;
-    case "4":
-        result = "осінь";
-        break;
-    default:
-        result = "Введіть коректну цифру";
+// switch (num) {
+//     case "1":
+//         result = "зима";
+//         break;
+//     case "2":
+//         result = "весна";
+//         break;
+//     case "3":
+//         result = "літо";
+//         break;
+//     case "4":
+//         result = "осінь";
+//         break;
+//     default:
+//         result = "Введіть коректну цифру";
             
-}
-alert(result);
+// }
+// alert(result);
+
+//TODO: 4 ===================================
+// скористаємося циклом while та виведіть у консоль числа від 0 до 50
+
+// let num = 0;
+
+// while (num <= 50) {
+//     console.log(num)
+//     num +=1
+// }
