@@ -86,12 +86,29 @@
 //70 === 01:10
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
 
-let userInput = Number(prompt("Enter quantity a minutes"));
-let hours;
-let minutes;
+// let userInput = Number(prompt("Enter quantity a minutes"));
+// let hours;
+// let minutes;
 
-minutes = String(userInput % 60).padStart(2, 0);
-hours = String(Math.floor(userInput / 60)).padStart(2, 0);
+// minutes = String(userInput % 60).padStart(2, 0);
+// hours = String(Math.floor(userInput / 60)).padStart(2, 0);
 
-console.log(`${hours}:${minutes}`);
+// console.log(`${hours}:${minutes}`);
 
+//TODO: 7 ===================================
+//Напишіть цикл, який виводить у консоль
+// числа від max до min за спаданням
+// Додайте усі парні числа від min до max
+
+const max = 43;
+const min = 28;
+
+let binateSum = 0;
+
+for (let i = max; i >= min; i -= 1) {
+    console.log(i);
+    if (i % 2 === 0) {
+        binateSum += i;
+    }
+}
+console.log(binateSum);
