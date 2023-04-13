@@ -100,15 +100,45 @@
 // числа від max до min за спаданням
 // Додайте усі парні числа від min до max
 
-const max = 43;
-const min = 28;
+// const max = 43;
+// const min = 28;
 
-let binateSum = 0;
+// let binateSum = 0;
 
-for (let i = max; i >= min; i -= 1) {
-    console.log(i);
-    if (i % 2 === 0) {
-        binateSum += i;
+// for (let i = max; i >= min; i -= 1) {
+//     console.log(i);
+//     if (i % 2 === 0) {
+//         binateSum += i;
+//     }
+// }
+// console.log(binateSum);
+
+//TODO: 8 ===================================
+//Напишіть код, який запитуватиме
+//логін за допомогою prompt і логувати результат
+//в консоль браузера
+
+//Якщо відвідувач вводить "Адмін",
+//то prompt запитує пароль.
+//Якщо нічого не ввели або натиснута клавіша відміна
+//Вивести рядок "Я вас не знаю"
+
+//Пароль перевіряти так:
+//Якщо введено пароль "Я головний",
+//то вивести рядок "Добрий день!"
+// Якщо відвідувач натиснув відміна виводити рядок 'скасовано'
+//інакше виводити рядок "Невірний пароль!"
+
+const userInputLogin = prompt("Введіть логін");
+let userInputPass;
+if (userInputLogin === "Адмін") {
+    if ((userInputPass = prompt("Введіть пароль")) === "Я головний") {
+        console.log("Добрий день!");
+    } else if (userInputPass === null) {
+        console.log("скасовано");
+    } else {
+        console.log("Невірний пароль!");
     }
+} else {
+    console.log("Я вас не знаю");
 }
-console.log(binateSum);
