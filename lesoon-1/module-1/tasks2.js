@@ -129,16 +129,41 @@
 // Якщо відвідувач натиснув відміна виводити рядок 'скасовано'
 //інакше виводити рядок "Невірний пароль!"
 
-const userInputLogin = prompt("Введіть логін");
-let userInputPass;
-if (userInputLogin === "Адмін") {
-    if ((userInputPass = prompt("Введіть пароль")) === "Я головний") {
-        console.log("Добрий день!");
-    } else if (userInputPass === null) {
-        console.log("скасовано");
-    } else {
-        console.log("Невірний пароль!");
+// const userInputLogin = prompt("Введіть логін");
+// let userInputPass;
+// if (userInputLogin === "Адмін") {
+//     if ((userInputPass = prompt("Введіть пароль")) === "Я головний") {
+//         alert("Добрий день!");
+//     } else if (userInputPass === null) {
+//         alert("скасовано");
+//     } else {
+//         alert("Невірний пароль!");
+//     }
+// } else {
+//     alert("Я вас не знаю");
+// }
+
+
+//TODO: 9 ===================================
+// При завантаженні сторінки користувачеві пропонується
+// в prompt ввести число. Введення додається до значення
+// змінної total.
+// Операція введення числа триває до того часу,
+// поки користувач не натисне кнопку Cancel в prompt.
+// Після того, як користувач припинив введення натиснувши на
+// кнопку Cancel, показати alert з рядком "Загальна сума введених чисел дорівнює [число]."
+// Робити перевірку,що користувач ввів саме число,
+// а не довільний набір символів, не потрібно.
+
+let total = 0;
+let userInput = null;
+
+do {
+    userInput = prompt("Введіть число");
+    if (userInput === null) {
+        break;
     }
-} else {
-    console.log("Я вас не знаю");
-}
+    userInput = parseFloat(userInput);
+} while (total += userInput);
+
+alert(`Загальна сума введених чисел дорівнює ${total}.`);
