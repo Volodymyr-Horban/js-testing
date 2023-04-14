@@ -155,15 +155,32 @@
 // Робити перевірку,що користувач ввів саме число,
 // а не довільний набір символів, не потрібно.
 
-let total = 0;
+// let total = 0;
+// let userInput = null;
+
+// do {
+//     userInput = prompt("Введіть число");
+//     if (userInput === null) {
+//         break;
+//     }
+//     userInput = parseFloat(userInput);
+// } while (total += userInput);
+
+// alert(`Загальна сума введених чисел дорівнює ${total}.`);
+
+//TODO: 10 ===================================
+// Напишіть цикл, який пропонує ввести
+// число більше 100 через prompt.
+// Якщо відвідувач ввів інше число - попросити
+// ввести ще раз і так далі.
+// Цикл має питати число, поки відвідувач не
+// введе число більше 100, або натисне кнопку
+// скасування в prompt
+
 let userInput = null;
 
 do {
-    userInput = prompt("Введіть число");
-    if (userInput === null) {
-        break;
-    }
-    userInput = parseFloat(userInput);
-} while (total += userInput);
+    userInput = Number.parseFloat(prompt("Введіть число більше 100"));
+} while (userInput <= 100);
 
-alert(`Загальна сума введених чисел дорівнює ${total}.`);
+alert(userInput);
