@@ -55,9 +55,26 @@
 
 //TODO: 4 ===================================
 // скористаємося циклом while та виведіть у консоль числа від 0 до 50
- let counter = 0;
+//  let counter = 0;
 
- while (counter <= 50) {
-    console.log (counter);
-    counter += 1;
- }
+//  while (counter <= 50) {
+//     console.log (counter);
+//     counter += 1;
+//  }
+
+
+//TODO: 5 ===================================
+//Використовуючи конструкцію if...else,
+//напишіть код, який запитуватиме:
+//"Яка офіційна назва JavaScript?"
+//Якщо користувач вводить "ECMAScript",
+// показати через alert: "Вірно!"
+//інакше відобразити: "Не знаєте? ECMAScript!"
+
+const question = prompt('Яка офіційна назва JavaScript?').toLowerCase();
+
+if (question === 'ecmascript') {
+    alert ('Вірно!')
+} else {
+    alert ('Не знаєте? ECMAScript!')
+}
