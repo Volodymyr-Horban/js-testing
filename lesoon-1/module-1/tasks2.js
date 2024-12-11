@@ -85,7 +85,25 @@
 //рядок у форматі годин і хвилин
 //70 === 01:10
 
-const globalMin = prompt('Enter minutes value');
-const hours = Math.floor(globalMin / 60);
-const minutes = Math.floor(globalMin - (hours*60));
-console.log (` ${hours} : ${minutes} `);
+// const globalMin = prompt('Enter minutes value');
+// const hours = Math.floor(globalMin / 60);
+// const minutes = Math.floor(globalMin - (hours*60));
+// console.log (` ${hours} : ${minutes} `);
+
+//TODO: 7 ===================================
+//Напишіть цикл, який виводить у консоль
+// числа від max до min за спаданням
+// Додайте усі парні числа від min до max
+
+const max = 55;
+const min = 14;
+let total = 0;
+
+for (let i = max; i >= min; i -= 1) {
+    if (i % 2 === 0) {
+        console.log (i);
+        total += i; 
+    }
+}
+
+console.log ("Total sum:", total );
