@@ -124,19 +124,22 @@
 // Якщо відвідувач натиснув відміна виводити рядок 'скасовано'
 //інакше виводити рядок "Невірний пароль!"
 
+const loginInput = prompt ('Input your login');
+console.log (`Login: ${loginInput}`);
+
 if (loginInput === "Адмін") {
-    const password = prompt('Введіть свій пароль');
+    const password = prompt ('Input your password');
     if (password) {
         if (password === "Я головний") {
-            alert("Добрий день!");
+            console.log ('Добрий день!');
         } else {
-            alert("Невірний пароль!")
+            console.log ('Невірний пароль!');
         }
+
     } else {
-        alert("скасовано");
+        console.log ('скасовано');
     }
-} else if (loginInput !== "Адмін" && loginInput) {
-    alert("Невірний логін");
+    
 } else {
-    alert("скасовано");
+    console.log ('скасовано');
 }
