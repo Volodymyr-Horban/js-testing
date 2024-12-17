@@ -159,17 +159,18 @@ let total = 0;
 let question = null;
 
 do {
-    question = prompt("Ведіть число");
+    question = prompt('Введіть число');
 
     if (question === null) {
         break;
     }
 
     question = parseFloat(question);
-     
+    
     if (!isNaN(question)) {
-        total += question;
+        total += (question);
     }
-} while (true)
+    
+} while (true);
 
-alert(`Загальна кількість ведених чисел дорінює ${total}`);
+alert(`Загальна сума введених чисел дорівнює ${total}.`);
